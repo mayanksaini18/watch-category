@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .card-price {
+            color: #28a745;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .see-more{
+            font-size: 10px;
+             align-items: center;
+              padding-left: 80px;
+               /* border: 1px solid violet;  */
+                text-decoration: none; 
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            /* Added to position video behind content */
+        }
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="watchbg2.mp4" type="video/mp4">
+    </video>
+    
+    <h1 style="text-align: center; padding: 20px; color: #f3ebeb;">Our Watch Collection</h1>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="pexels-pixabay-277390.jpg" alt="Watch 1">
+            <div class="card-body">
+                <h2 class="card-title">Classic Watch</h2>
+                <p class="card-price">₹4,999</p>
+                <p class="card-description">Timeless and elegant, these watches often feature leather straps, minimalistic dials. Ideal for formal occasions and professional settings.</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="see-more-classicWatch.html" class="see-more"> see more</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="pexels-ferarcosn-190819.jpg" alt="Watch 2">
+            <div class="card-body">
+                <h2 class="card-title">Sporty Watch</h2>
+                <p class="card-price">₹3,499</p>
+                <p class="card-description">Designed for active individuals, these watches are rugged, water-resistant, and come with features like chronographs, GPS, and heart rate monitors.</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="see-more-sportsWatches.html" class="see-more"> see more</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="pexels-joey-nguy-n-1056657-2113994.jpg" alt="Watch 3">
+            <div class="card-body">
+                <h2 class="card-title">Luxury Watch</h2>
+                <p class="card-price">₹15,999</p>
+                <p class="card-description">Synonymous with prestige and style, luxury watches are crafted with premium materials such as gold, diamonds, and sapphire glass.</p>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="see-more-luxuryWatche.html" class="see-more"> see more</a>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+    </div>
+</body>
+</html>
